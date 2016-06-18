@@ -1,0 +1,201 @@
+@charset 'UTF-8';
+@import url('reset.css');
+@import url('jquery-ui.min.css');
+@import url('jquery-ui.structure.min.css');
+@import url('jquery-ui.theme.min.css');
+
+body {
+	background: rgb(153,153,153);
+}
+
+#formcontainer {
+	width: 60%;
+	margin: 0 auto 0 auto;
+	margin-top:2.9em;
+}
+fieldset {
+	margin-bottom: 2em;
+	border: solid 2px #555555;
+	background-color: #ffffff;
+	display: block;
+}
+
+/*input { 
+	border: 1px rgb(0,0,0) solid;
+	background: rgb(255,255,255);
+	padding: 6px;
+	border-radius: 6px;
+	width: 50px;
+	margin: 10px, 10px 10px, 10px;
+}
+*/ 
+
+
+#radioset  {
+	padding-top:20px;
+	padding-bottom: 30px;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+#radioset  input, #radioset  label{
+	font-size: 2em;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	padding:1%;
+	
+}
+#eventaddress label{
+font-size: 2.2em;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	padding:1%;
+
+}
+	
+	h2.event{
+	font-size: 2.6em;
+	font-family:Myriad Pro,Georgia;
+	padding-bottom:.6em;
+	padding-top: 1em;
+	margin-bottom: 5px;
+	margin-left:10px;
+
+	}
+	
+	/*label{
+	font-size: 20px;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left:10px;
+	}
+	
+	
+	
+	input{
+		border: 1px rgb(0,0,0) solid;
+		border-color: rgb(204,204,204);
+		background: rgb(204,204,204);
+		padding: 6px;
+		padding-left: 10px;
+		border-radius: 6px;
+		width: 170px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left:10px;
+		font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+		font-size: 14px;
+		
+	}*/
+	
+	
+	legend.title {
+	font-size: 4em;
+	padding-top:10px;
+	padding-bottom:1em;
+	padding-left: 10px;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-weight:bold;
+
+	
+	}
+	
+	/*#firstname{
+	border: 1px rgb(0,0,0) solid;
+	border-color: rgb(204,204,204);
+	background: rgb(204,204,204);
+	padding: 6px;
+	padding-left: 10px;
+	border-radius: 6px;
+	width: 170px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left:10px;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-size: 14px;
+	
+	}*/
+	.ui-selectmenu-button{
+	width: 250px;
+	margin-left: 8px;
+	margin-bottom:25px;
+	}
+	
+	#datepicker{
+	padding-left: 10px;
+	
+	}
+	
+	
+	/*#city{
+	border: 1px rgb(0,0,0) solid;
+	border-color: rgb(204,204,204);
+	background: rgb(204,204,204);
+	padding: 6px;
+	border-radius: 6px;
+	width: 100px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left:10px;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	
+	}*/
+	
+/*#streetaddress{
+	border: 1px rgb(0,0,0) solid;
+	border-color: rgb(204,204,204);
+	background: rgb(204,204,204);
+	padding: 6px;
+	border-radius: 6px;
+	width: 100px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left:10px;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	}*/
+
+#autocomplete{
+	border: 1px rgb(0,0,0) solid;
+	border-color: rgb(204,204,204);
+	background: rgb(204,204,204);
+	border-radius: 6px;
+	width: 38px;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left:10px;
+	}
+	
+	label.address{
+	font-size: 14px;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	margin-left: 10px;
+	margin-top:20px;
+	}
+	
+	input.streetaddress{
+		border: 1px rgb(0,0,0) solid;
+		border-color: rgb(204,204,204);
+		background: rgb(204,204,204);
+		padding: 6px;
+		padding-left: 10px;
+		border-radius: 6px;
+		width: 250px;
+		margin-top: 10px;
+		margin-bottom: 5px;
+		margin-left:10px;
+		font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+		font-size: 14px;
+	
+	}
+	 #zipcode{
+		width: 100px;
+	}
+	
+	 #cakeflavor{
+	font-size:2em;
+	
+	}
+	
+	
+
+
+	
+	

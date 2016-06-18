@@ -1,0 +1,614 @@
+@charset 'UTF-8';
+@import url('jquery.fancybox.css');
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,900);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle);
+@font-face {
+font-family: cashCurrency;
+src: url(../img/fonts/CashCurrency.ttf);
+}
+@font-face {
+font-family: cheddarJack;
+src: url(../img/fonts/CheddarJack.ttf);
+}
+
+
+
+/*********Media Queries ********/
+
+@media all and (max-width: 1005px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+#pageheader.price{
+display:none;
+}
+#pricesList {
+    display: initial;
+    background-color: #ffffff;
+    width: 550px;
+    margin: 0 auto;
+    height: 550px;
+}
+h1.pricelist, h1.speciallist2, h1.speciallist{
+text-align:center;
+font-family: Georgia, Myriad Pro; 
+font-size:3em;
+margin-bottom:5%;
+}
+h1.pricelist{
+margin-top:6%;
+}
+h1.speciallist{
+margin-top:10%;
+}
+h1.speciallist2{
+margin-top:15%;
+}
+#cakepricelist,#cookiepricelist, #cupcakepricelist, #treatpricelist{
+color:#ffffff;
+    width: 550px;
+    margin: 0 auto;
+    height: 550px;
+padding:1%;
+height:450px;
+border-bottom:solid #FADFA0;
+}
+#cakepricelist{
+background-color:#B57640;
+}
+#cookiepricelist{
+background-color:#E85E51;
+}
+#cupcakepricelist{
+background-color:#B57640;
+}
+#treatpricelist{
+background-color:#E85E51;
+}
+#cakepricelist ul li, #cookiepricelist ul li, #cupcakepricelist ul li, #treatpricelist ul li{
+font-family: Myriad Pro,Georgia; 
+font-size:2em;
+text-align: center;
+margin-bottom:5%;
+}
+/***form style***/
+h1.heading {
+    font-size: 3.4em;
+}
+p.event, p.event1 {
+    font-size: 2.5em;
+}
+h3.contactinfo {
+    font-size: 2.4em;
+}
+.controls label {
+    font-family: "News Cycle",sans-serif;
+    font-size: 2em;
+}
+ /******    Mobile Menu   *******/
+ 
+#menubox{
+width:100%;
+z-index:15;
+}
+  #cssmenu {
+    width: 100%;
+	z-index:15;
+
+  }
+  #cssmenu ul {
+    width: 100%;
+    display: none;
+	margin:0 auto 0 auto;
+  }
+  #cssmenu.align-center > ul {
+    text-align: left;
+  }
+  #cssmenu ul li {
+    width: 100%;
+    border-top: 1px solid rgba(120, 120, 120, 0.2);
+  }
+  #cssmenu ul ul li,
+  #cssmenu li:hover > ul > li {
+    height: auto;
+  }
+  #cssmenu ul li a,
+  #cssmenu ul ul li a {
+    width: 100%;
+    border-bottom: 0;
+  }
+  #cssmenu > ul > li {
+    float: none;
+  }
+  #cssmenu ul ul li a {
+    padding-left: 25px;
+  }
+  #cssmenu ul ul ul li a {
+    padding-left: 35px;
+  }
+  #cssmenu ul ul li a {
+    color: #603913;
+    background: none;
+  }
+  #cssmenu ul ul li:hover > a,
+  #cssmenu ul ul li.active > a {
+    color: #ffffff;
+  }
+  #cssmenu ul ul,
+  #cssmenu ul ul ul,
+  #cssmenu.align-right ul ul {
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+  #cssmenu > ul > li.has-sub > a:after,
+  #cssmenu > ul > li.has-sub > a:before,
+  #cssmenu ul ul > li.has-sub > a:after,
+  #cssmenu ul ul > li.has-sub > a:before {
+    display: none;
+  }
+  #cssmenu #menu-button {
+    display: block;
+    padding: 17px;
+    color: #603913;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+#cssmenu #menu-button:after {
+    position: absolute;
+    top: 22px;
+    right: 17px;
+    display: block;
+    height: 4px;
+    width: 20px;
+    border-top: 2px solid #603913;
+    border-bottom: 2px solid #603913;
+    content: '';
+  }
+#cssmenu #menu-button:before {
+    position: absolute;
+    top: 16px;
+    right: 17px;
+    display: block;
+    height: 2px;
+    width: 20px;
+    background: #603913;
+    content: '';
+  }
+#cssmenu #menu-button.menu-opened:after {
+    top: 23px;
+    border: 0;
+    height: 2px;
+    width: 15px;
+    background: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+#cssmenu #menu-button.menu-opened:before {
+    top: 23px;
+    background: #ffffff;
+    width: 15px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+#cssmenu .submenu-button {
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    top: 0;
+    display: block;
+    border-left: 1px solid rgba(120, 120, 120, 0.2);
+    height: 38px;
+    width: 46px;
+    cursor: pointer;
+  }
+#cssmenu .submenu-button.submenu-opened {
+    background: #E85E51;
+  }
+#cssmenu ul ul .submenu-button {
+    height: 34px;
+    width: 34px;
+  }
+#cssmenu .submenu-button:after {
+    position: absolute;
+    top: 22px;
+    right: 19px;
+    width: 8px;
+    height: 2px;
+    display: block;
+    background:#603913;
+    content: '';
+  }
+#cssmenu ul ul .submenu-button:after {
+    top: 15px;
+    right: 13px;
+  }
+#cssmenu .submenu-button.submenu-opened:after {
+    background: #ffffff;
+  }
+#cssmenu .submenu-button:before {
+    position: absolute;
+    top: 19px;
+    right: 22px;
+    display: block;
+    width: 2px;
+    height: 8px;
+    background: #603913;
+    content: '';
+  }
+#cssmenu ul ul .submenu-button:before {
+    top: 12px;
+    right: 16px;
+  }
+#cssmenu .submenu-button.submenu-opened:before {
+    display: none;
+  }
+  
+  /******    Mobile Menu   *******/
+  
+#content{
+	width:100%;
+}
+
+#pageheader{
+font-size:35px;
+}
+.col-md-4 {
+width:50%;
+margin-left:8%;
+  }
+.col-md-4 ul.options li {
+	font-size: 2em;
+    font-size: 2vw;
+}
+#cakeboxes{
+  display:none;
+  }
+#colhome, #demo_body{
+  height: 270px;
+  }
+.btn, .btn-warning{
+  font-size: 2em;
+ }
+ #logocaption h1 {
+    font-size: 2.5em;
+	}
+#content p.missionBody {
+    font-size: 1.6em;
+}
+#aboutus h1 {
+    font-size: 2.7em;
+	}
+}
+@media only screen and (max-device-width: 942px), only screen and (max-width: 942px) {
+#headertext h1 {
+    font-size: 3.7em;
+}
+#headertext h1.subHeader {
+    font-size: 3.1em;
+}
+
+#fbIcon{
+margin-left:5%;
+}
+#mission {
+    float: none;
+    margin:0;
+	margin: 0 auto;
+    margin-top: 9%;
+	width: 241px;
+	height: 428px;
+	}
+#aboutus h1 {
+    font-size: 3em;
+	text-align: center;
+	margin-left:0;
+}
+#content p.missionBody {
+    font-size: 2em;
+}
+#aboutus {
+    width: 95%;
+}
+}
+@media only screen and (max-device-width: 992px), only screen and (max-width: 992px) {
+.col-md-2 {
+ float: left;
+  }
+.col-md-4 {
+ float: left;
+  }
+.col-md-8 {
+ margin-left:5%;
+ width:90%;
+  }
+.col-md-5 {
+ float: left;
+ background-color: #EAD8AD; 
+  }
+ }
+
+@media only screen and (max-device-width: 850px), only screen and (max-width: 850px) {
+
+#iconboxhomeimg{
+margin-left:2%;
+}
+h1.pricelist, h1.speciallist2, h1.speciallist{ 
+font-size:3.2em;
+}
+#cakepricelist ul li, #cookiepricelist ul li, #cupcakepricelist ul li, #treatpricelist ul li{
+font-size:2.5em;
+}
+
+.controls label {
+	font-size: 2.8em;
+}
+h3.contactinfo{
+	font-size: 3em;
+	font-size: 3vw;
+}	
+h1.heading {
+	font-size: 3.8em;
+	font-size: 3.8vw;
+}
+p.event1, p.event {
+	font-size: 2.8em;
+	font-size: 2.8vw;
+}
+.btn, .btn-warning{
+  font-size: 2.5em;
+ }
+#colhome, #demo_body{
+  height:170px;
+  }
+.col-md-4 ul.options li {
+font-size: 2em;
+font-size: 2.2vw;
+}
+}
+@media only screen and (max-device-width: 790px), only screen and (max-width: 790px) {
+#headertext h1 {
+    font-size: 3em;
+}
+#headertext h1.subHeader {
+    font-size: 2.5em;
+}
+#servings {
+    width: 100%;
+}
+
+@media only screen and (max-device-width: 675px), only screen and (max-width: 675px) {
+#pageheader{
+margin-top:10%;
+}
+#socialMedia{
+	width: 200px;
+	background-color: #FFF;
+	height: 350px;
+	margin-left: 7%;
+	margin-top: 3%;
+}
+h1.heading{
+	font-size:30px;
+}
+p.event1, p.event {
+    font-size: 18px;
+}
+h3.contactinfo {
+    font-size: 20px;
+}
+#content p.missionBody {
+    font-size: 2.5em;
+}
+#aboutus h1 {
+    font-size: 4em;
+}
+}
+
+@media only screen and (max-device-width: 670px), only screen and (max-width: 670px) {
+#logocaption h1 {
+    font-size: 3em;
+}
+
+#emailIcon, #blogIcon, #fbIcon, #twitterIcon, #pinIcon, #InstaIcon{
+width:100px;
+height:100px;
+float:left;
+margin-left:0;
+}
+}
+@media only screen and (max-device-width: 640px), only screen and (max-width: 640px) {
+
+#colhome, #demo_body{
+  height:130px;
+  }
+.hover_info h1{
+font-size:1.2em;
+}
+#end, #pin {
+display:none;
+}
+footer {
+    width: 90%;
+}
+#headertext h1 {
+   font-size: 2.2em;
+}
+#headertext h1.subHeader {
+    font-size: 1.8em;
+}
+}
+@media only screen and (max-device-width: 576px), only screen and (max-width: 576px) {
+#cycleboxhome{
+display:none;
+}
+
+.col-md-4{
+width:70%;
+margin-left:-2%;
+}
+.col-md-4 ul.options li {
+font-size: 3em;
+font-size: 3.1vw;
+}
+#iconboxhomeimg img{
+width:25%;
+height:25%;
+}
+
+#tweens, #pin, #end{
+display:none;
+
+}
+
+#logoimg h1 {
+    margin: 0 auto;
+    text-indent: -9999px;
+    background: url(../img/sweetNothings_logo.png)center no-repeat;
+    width: 150px;
+    height: 250px;
+    background-size: 150px 250px;
+}
+#logoimg {
+    width: 50%;
+    margin: 0 auto;
+}
+#pricesList {
+    width: 100%;
+	height: auto;
+}
+#cakepricelist, #cookiepricelist, #cupcakepricelist, #treatpricelist {
+    width: 100%;
+    height: auto;
+	padding-bottom: 10%;
+}
+h1.pricelist, h1.speciallist2, h1.speciallist {
+    font-size: 4em;
+}
+#cakepricelist ul li, #cookiepricelist ul li, #cupcakepricelist ul li, #treatpricelist ul li {
+    font-size: 3.5em;
+}
+}
+@media only screen and (max-device-width: 530px), only screen and (max-width: 530px) {
+
+h1.pricelist, h1.speciallist2, h1.speciallist{ 
+font-size:3.6em;
+margin-top:10%;
+}
+
+#colhome, #demo_body{
+display:none;
+ }
+ #content p.missionBody {
+    font-size: 3.2em;
+}
+#aboutus h1 {
+    font-size: 4.8em;
+}
+}
+@media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
+#headertext h1 {
+	padding-top:3%;
+	line-height: 1.2;
+	font-size: 1.8em;
+}
+#headertext h1.subHeader {
+    font-size: 1.6em;
+}
+#emailIcon, #blogIcon, #fbIcon, #twitterIcon, #pinIcon, #InstaIcon {
+width: 70px;
+height: 70px;
+float: left;
+margin-left: 0;
+margin-right: 0;
+}
+#emailIcon a img, #emailIcon:link img, #emailIcon:visited img,#blogIcon a img, #blogIcon:link img, #blogIcon:visited img,#fbIcon a img, #fbIcon:link img, #fbIcon:visited img,#twitterIcon a img, #twitterIcon:link img, #twitterIcon:visited img,#pinIcon a img, #pinIcon:link img, #pinIcon:visited img,#InstaIcon a img, #InstaIcon:link img, #InstaIcon:visited img{
+    width: 70px;
+    height: 70px;
+	}
+#cycleboxhome{
+display:none;
+}
+#logocaption h1 {
+    font-size: 5.3em;
+}
+
+#pageheader.gallery{
+display:none;
+}
+
+.col-md-4{
+width:70%;
+margin-left:-2%;
+}
+
+h1.pricelist, h1.speciallist2, h1.speciallist{ 
+font-size:3.8em;
+margin-top:15%;
+}
+.controls label {
+    font-size: 4.8em;
+}
+.btn, .btn-warning {
+    font-size: 4.5em;
+}
+footer p, footer a, .footer-info, .footer-muted {
+    font-size: .6em;
+	padding-bottom:3px;
+}
+}
+@media only screen and (max-device-width: 380px), only screen and (max-width: 380px) {
+h1.pricelist, h1.speciallist2, h1.speciallist {
+    font-size: 5em;
+}
+#cakepricelist ul li, #cookiepricelist ul li, #cupcakepricelist ul li, #treatpricelist ul li {
+    font-size: 4.5em;
+}
+#EventDetails{
+display:none;
+}
+footer{
+padding-bottom:0;
+margin-bottom:0;
+}
+}
+@media only screen and (max-device-width: 350px), only screen and (max-width: 350px) {
+#headertext {
+    padding: 3%;
+}
+#aboutus h1 {
+    font-size: 7em;
+}
+#content p.missionBody {
+    font-size: 4.8em;
+}
+.col-md-4{
+width:90%;
+margin-left:-12%;
+}
+.col-md-4 ul.options li {
+font-size: 4em;
+font-size: 4.5vw;
+}
+h1.pricelist, h1.speciallist2, h1.speciallist {
+    font-size: 5.9em;
+}
+#cakepricelist ul li, #cookiepricelist ul li, #cupcakepricelist ul li, #treatpricelist ul li {
+    font-size: 4.9em;
+}
+.controls label {
+    font-size: 5.8em;
+}
+}
+@media only screen and (max-device-width: 320px), only screen and (max-width: 320px) {
+#pageheader{
+margin-top:15%;
+}
+}

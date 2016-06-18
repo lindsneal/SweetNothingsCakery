@@ -1,0 +1,71 @@
+@charset 'UTF-8';
+@import url('jquery.fancybox.css');
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,900);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle);
+@font-face {
+font-family: cashCurrency;
+src: url(../img/fonts/CashCurrency.ttf);
+}
+@font-face {
+font-family: cheddarJack;
+src: url(../img/fonts/CheddarJack.ttf);
+}
+
+
+
+
+/*@media only screen and (min-device-width: 999px), only screen and (min-width: 999px) {*/
+
+
+/* Desktops and laptops ----------- */
+/*@media(min-width :340px) {*/
+/* Styles */
+/*#wrapper {
+    min-width: 960px;
+    width: 90%;
+    max-width: 1200px;
+}*/
+
+/*Media Queries*/
+
+@media only screen and (max-device-width: 1600px), only screen and (max-width: 1600px) {
+#content p.missionBody{
+font-size:1.2em;
+}
+}
+@media only screen and (max-device-width: 1250px), only screen and (max-width: 1250px) {
+
+.priceBody{
+font-size:1.6em;
+}
+}
+
+@media only screen and (max-device-width: 1150px), only screen and (max-width: 1150px) {
+.hover_info h1{
+font-size:1.3em;
+}
+.col-md-4 ul.options li{
+font-size:1.3em;
+font-size:1.4vw;
+}
+h1.heading {
+	font-size: 2.7em;
+	font-size: 2.8vw;
+}
+p.event, p.event1 {
+	font-size: 1.7em;
+	font-size: 1.9vw;
+}
+h3.contactinfo{
+	font-size: 1.7em;
+	font-size: 1.9vw;
+}
+.controls label {
+		font-size: 1.7em;
+		font-size: 1.9vw;
+}
+#pageheader{
+		font-size: 3.3em;
+		font-size: 3.3vw;
+}
+}

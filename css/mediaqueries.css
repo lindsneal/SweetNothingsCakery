@@ -1,0 +1,194 @@
+@charset 'UTF-8';
+@import url('reset.css');
+@import url('reset2.css');
+@import url('jquery.fancybox.css');
+@font-face {
+font-family: cashCurrency;
+src: url(../img/CashCurrency.ttf);
+}
+@font-face {
+font-family: cheddarJack;
+src: url(../img/CheddarJack.ttf);
+}
+@media screen and (max-device-width: 942px){
+
+#colhome{
+height:220px;
+height:21em;
+height:27vh;
+}
+#demo_body{
+margin-left:-4.1%;
+}
+#aboutus{
+	height:700px;
+}
+
+}
+@media screen and (max-device-width: 850px){
+
+#iconboxhomeimg{
+margin-left:2%;
+}
+
+#aboutus{
+	height:600px;
+}
+}
+@media screen and (max-device-width: 670px) {
+#aboutus{
+	height:500px;
+}
+}
+@media screen and (max-device-width: 576px) {
+
+#pageheader{
+margin-top:45%;
+}
+
+.col-md-4{
+width:70%;
+margin-left:-2%;
+}
+#colhome{
+height:136px;
+height:21.5em;
+height:18vh;
+}
+
+#logoimg {
+visibility:hidden;
+}
+#logocaption {
+visibility:hidden;
+}
+#iconboxhomeimg img{
+width:25%;
+height:25%;
+}
+#tweens, #pin, #end{
+display:none;
+
+}
+#content.specialpadding{
+padding-bottom:25%;
+}
+#aboutus{
+height:400px;
+}
+
+}
+
+@media screen and (max-device-width: 480px) {
+#cycleboxhome{
+display:none;
+}
+#colhome{
+margin-top:20%;
+height:115px;
+height:21.5em;
+height:17vh;
+
+}
+#iconboxhomeimg img{
+width:25%;
+height:25%;
+}
+footer{
+margin-bottom:-50%;
+}
+
+#pageheader{
+margin-top:55%;
+}
+#fancybox{
+margin-top:55%;
+}
+#pageheader.gallery{
+display:none;
+}
+
+.col-md-4{
+width:70%;
+margin-left:-2%;
+}
+#aboutus{
+height:300px;
+}
+}
+@media screen and (max-device-width: 380px) {
+#cycleboxhome{
+display:none;
+}
+#demo_body{
+margin-top:30%;
+}
+#colhome{
+height:90px;
+height:21.5em;
+height:16vh;
+}
+#iconboxhomeimg img{
+width:25%;
+height:25%;
+}
+footer{
+margin-bottom:-100%;
+}
+
+#pageheader{
+margin-top:65%;
+}
+#EventDetails{
+display:none;
+}
+#fancybox{
+margin-top:65%;
+}
+#aboutus{
+height:250px;
+}
+}
+@media screen and (max-device-width: 350px) {
+#colhome{
+visibility:hidden;
+}
+.col-md-4{
+width:90%;
+margin-left:-12%;
+}
+#iconboxhomeimg img{
+visibility:hidden;
+}
+#fancybox{
+margin-top:75%;
+}
+#pageheader{
+margin-top:75%;
+}
+
+}
+@media screen and (max-max-max-device-width: 292px) {
+
+#iconboxhomeimg img{
+visibility:hidden;
+/*width:25%;
+height:25%;
+margin-top:80%;*/
+}
+
+#fancybox{
+margin-top:80%;
+}
+#pageheader{
+margin-top:87%;
+}
+}
+
+
+
+
+
+
+
+
