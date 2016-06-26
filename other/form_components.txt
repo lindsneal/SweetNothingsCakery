@@ -1,0 +1,43 @@
+<!--<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"><span class="ui-button-text" role="button">This is a Test Button</span></button>
+		
+		<fieldset class = "group">
+			<label for = "yearbirth">Year of Birth</label>
+			<input type = "text" name = "yearbirth" id = "yearbirth" class = "text" size = "4" maxlength = "4" />
+	
+	
+	
+	<legend> Would you like to receive more information?(check all that apply)</legend>
+	
+		
+			<input type = "checkbox" name = "interested" id = "mailinglist" value = "mailinglist" checked = "checked" />
+			<label for = "mailinglist">I would like to receive Emails about the latest web design news.</label>
+		
+		
+		
+		
+		<input type = "checkbox" name = "interested" id = "familytree" value = "familytree" />
+		<label for = "familytree">I would like to be added to the mailing list.</label>
+		
+		
+		
+		<input type = "checkbox" name = "interested" id = "ireland" value = "ireland" />
+		<label for = "ireland">I'd like to sign up for the quarterly Responsive Web Design magazine.</label>
+		
+		
+		
+		<input type = "checkbox" name = "interested" id = "volunteer" value = "reunion" />
+		<label for = "reunion">I would like information about the Responsive Web Design seminar.</label>
+		
+	
+	<legend class="heading">Volunteer Skills and Interests</legend>
+
+	
+	<legend>Send a message</legend>
+	
+	
+	<label for = "message">Comments</label>
+	<textarea name = "comment" id = "comment" rows = "10" cols = "45"></textarea>
+	
+	
+	<input type = "submit" value = "Send Information" class = "button" />
+	<input type = "reset" value = "Reset" class = "button" />-->

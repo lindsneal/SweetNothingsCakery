@@ -1,0 +1,22 @@
+<!-- menu select bar -->	
+	<div id="cakeflavor">
+		<h2 class="cake">Cake Flavor</h2>
+		<select id="selectmenu" class="ui-selectmenu-button ui-widget ui-state-default ui-corner-all">
+			<option selected="selected">Wedding White Vanilla<option>
+			<option>Devil's Food Chocolate</option>
+			<option>Lemon</option>
+			<option>Butter Pecan</option>
+			<option>Spice Cake</option>
+			<option>Other</option>
+		</select>
+	</div>
+	<div id="icingtype">
+		<h2 class="icing">Icing Type</h2>
+		<select id="selectmenu" class="ui-selectmenu-button ui-widget ui-state-default ui-corner-all">
+			<option selected="selected">Vanilla Buttercream<option>
+			<option>Chocolate Fudge</option>
+			<option>Cream Cheese</option>
+			<option>Fondant</option>
+			<option>Other</option>
+		</select>
+	</div>	
